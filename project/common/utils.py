@@ -1,10 +1,7 @@
 import sys
 
-sys.path.append('../')
-
 import json
-
-from common.variables import ENCODING, MAX_PACKAGE_LENGTH
+from .variables import ENCODING, MAX_PACKAGE_LENGTH
 
 
 def get_message(client):
