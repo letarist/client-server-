@@ -1,9 +1,11 @@
+import os
 import sys
 import unittest
 from unittest.mock import patch
-from ..common.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE
-from ..client import create_presence, process_ans
-import project.client
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+print(sys.path)
+from client import create_presence, process_ans
+from common.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE
 
 
 class TestClient(unittest.TestCase):
