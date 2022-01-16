@@ -1,6 +1,7 @@
 import json
 from socket import socket, AF_INET, SOCK_STREAM
 import sys
+import os
 import time
 from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR, DEFAULT_IP_ADDRESS, \
     DEFAULT_PORT

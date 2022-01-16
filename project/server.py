@@ -1,9 +1,11 @@
 import json
+import os
 from socket import socket, AF_INET, SOCK_STREAM
 import sys
-from common.variables import ACTION, DEFAULT_PORT, MAX_CONNECTIONS, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, \
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from .common.variables import ACTION, DEFAULT_PORT, MAX_CONNECTIONS, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, \
     RESPONSEDEFAULT_IP_ADDRESSE, ERROR
-from common.utils import get_message, send_message
+from .common.utils import get_message, send_message
 
 
 def process_client_message(message):
