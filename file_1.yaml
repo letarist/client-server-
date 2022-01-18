@@ -1,0 +1,11 @@
+items:
+- disk
+- book
+- lamp
+- notepad
+quantity: 4
+item_price:
+  disk: 200€
+  book: 500€
+  lamp: 1000€
+  notepad: 20€
