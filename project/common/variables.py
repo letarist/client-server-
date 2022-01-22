@@ -1,5 +1,5 @@
 """Порт"""
-DEFAULT_PORT = 7779
+DEFAULT_PORT = 7776
 """IP"""
 DEFAULT_IP_ADDRESS = '127.0.0.1'
 """Очередь подключений"""
