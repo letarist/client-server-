@@ -1,19 +1,20 @@
-import json
 import os
 from socket import socket, AF_INET, SOCK_STREAM
 import sys
 import logging
-import log.server_log_config
-from logging.handlers import TimedRotatingFileHandler
+from decorators import logg
 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append('common\\')
 from tests.err import IncorrectDataRecivedError
 from common.variables import ACTION, DEFAULT_PORT, MAX_CONNECTIONS, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR
 from common.utils import get_message, send_message
 
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 SERVER_LOGGER = logging.getLogger('server')
 
 
+@logg
 def process_client_message(message):
     SERVER_LOGGER.debug(f'Разбор сообщения от клиента - {message}')
     if ACTION in message and message[ACTION] == PRESENCE and TIME in message and USER in message and message[USER][
@@ -25,6 +26,7 @@ def process_client_message(message):
     }
 
 
+@logg
 def main():
     global listen_address
     try:

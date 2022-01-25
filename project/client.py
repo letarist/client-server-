@@ -1,18 +1,20 @@
 import json
 from socket import socket, AF_INET, SOCK_STREAM
 import sys
-import os
 import time
-import log.client_log_config
 import logging
+
+sys.path.append('common\\')
 from tests.err import ReqFieldMissingError
 from common.variables import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR, DEFAULT_IP_ADDRESS, \
     DEFAULT_PORT
 from common.utils import send_message, get_message
+from decorators import logg
 
 CLIENT_LOGGER = logging.getLogger('client')
 
 
+@logg
 def create_presence(account_name='Guest'):
     out = {
         ACTION: PRESENCE,
@@ -25,6 +27,7 @@ def create_presence(account_name='Guest'):
     return out
 
 
+@logg
 def process_ans(message):
     CLIENT_LOGGER.debug(f'Разбор сообщения от сервера:  {message}')
     if RESPONSE in message:
@@ -34,6 +37,7 @@ def process_ans(message):
     raise ValueError
 
 
+@logg
 def main():
     try:
         server_address = sys.argv[1]
