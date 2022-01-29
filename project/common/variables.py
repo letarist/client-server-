@@ -1,5 +1,5 @@
 """Порт"""
-DEFAULT_PORT = 7777
+DEFAULT_PORT = 7778
 """IP"""
 DEFAULT_IP_ADDRESS = '127.0.0.1'
 """Очередь подключений"""
@@ -17,4 +17,6 @@ PRESENCE = 'presence'
 RESPONSE = 'response'
 ERROR = 'error'
 RESPONSEDEFAULT_IP_ADDRESSE = 'responsedefault_ip_adresse'
-
+MESSAGE = 'message'
+MESSAGE_TEXT = 'mess_text'
+SENDER = 'sender'

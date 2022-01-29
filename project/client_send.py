@@ -25,13 +25,14 @@ def message_server(message):
 
 @logg
 def create_message(sock, account_name='Guest'):
-    message = input('введите сообщение для отправки: \n Для выхода нажмите Q')
-    if message == 'Q':
+    message = input('введите сообщение для отправки.  \n Для выхода нажмите "Q":  ')
+    if message == '!!!':
         sock.close()
-        CLIENT_LOGGER.info('Работа завершилась по запросу клиента')
+        CLIENT_LOGGER.info('Завершение работы по команде пользователя.')
+        print('Спасибо за использование нашего сервиса!')
         sys.exit(0)
     messages = {
-        ACTION: PRESENCE,
+        ACTION: MESSAGE,
         TIME: time.time(),
         ACCOUNT_NAME: account_name,
         MESSAGE_TEXT: message
@@ -69,7 +70,7 @@ def parser_arg():
     parser = argparse.ArgumentParser()
     parser.add_argument('addr', default=DEFAULT_IP_ADDRESS, nargs='?')
     parser.add_argument('port', default=DEFAULT_PORT, nargs='?')
-    parser.add_argument('-m', '--mode', default='listen', nargs='?')
+    parser.add_argument('-m', '--mode', default='send', nargs='?')
     namespace = parser.parse_args(sys.argv[1:])
     server_address = namespace.addr
     server_port = namespace.port
@@ -94,7 +95,6 @@ def main():
         transport.connect((server_address, server_port))
         send_message(transport, create_presence())
         answer = process_responce(get_message(transport))
-        CLIENT_LOGGER.info(f'При установке сервер вернул ошибку: ')
         CLIENT_LOGGER.info(f'Принят ответ от сервера {answer}')
         print(answer)
     except (ValueError, json.JSONDecodeError):
@@ -115,9 +115,10 @@ def main():
             if client_mode == 'send':
                 try:
                     send_message(transport, create_message(transport))
-                except(ConnectionResetError, ConnectionError, ConnectionAbortedError):
-                    CLIENT_LOGGER.error(f'Соединение с сервером {server_address} было потеряно')
+                except (ConnectionResetError, ConnectionError, ConnectionAbortedError):
+                    CLIENT_LOGGER.error(f'Соединение с сервером {server_address} было потеряно.')
                     sys.exit(1)
+
             if client_mode == 'listen':
                 try:
                     message_server(get_message(transport))
