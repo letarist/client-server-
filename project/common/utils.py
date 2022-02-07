@@ -1,9 +1,9 @@
 import json
 import sys
 import os
-
+sys.path.append('\\common')
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from variables import ENCODING, MAX_PACKAGE_LENGTH
+from variables import MAX_PACKAGE_LENGTH,ENCODING
 from decorators import logg
 
 
@@ -15,12 +15,11 @@ def get_message(client):
         response = json.loads(json_response)
         if isinstance(response, dict):
             return response
-        raise ValueError
-    raise ValueError
+
 
 
 @logg
 def send_message(sock, message):
     js_message = json.dumps(message)
-    encode_message = js_message.encode(ENCODING)
-    sock.send(encode_message)
+    encoded_message = js_message.encode(ENCODING)
+    sock.send(encoded_message)
