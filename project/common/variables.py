@@ -16,7 +16,6 @@ ACCOUNT_NAME = 'account-name'
 PRESENCE = 'presence'
 RESPONSE = 'response'
 ERROR = 'error'
-RESPONSEDEFAULT_IP_ADDRESSE = 'responsedefault_ip_adresse'
 MESSAGE = 'message'
 MESSAGE_TEXT = 'mess_text'
 SENDER = 'from'
@@ -24,9 +23,9 @@ DESTINATION = 'to'
 EXIT = 'exit'
 RESPONSE_400 = {
     ERROR: None,
-    RESPONSE: 400,
+    RESPONSE: 400
 }
 RESPONSE_200 = {
-    RESPONSE: 200,
+    RESPONSE: 200
 }
 
