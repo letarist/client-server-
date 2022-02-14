@@ -1,0 +1,294 @@
+DEBUG    - 2022-02-13 18:10:06,823 - Была вызвана функция arg_parser с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 18:10:06,823 - Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+DEBUG    - 2022-02-13 18:10:25,470 - Была вызвана функция arg_parser с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 18:10:25,470 - Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+DEBUG    - 2022-02-13 18:11:38,962 - Была вызвана функция arg_parser с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 18:11:38,962 - Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+DEBUG    - 2022-02-13 18:43:35,170 - Была вызвана функция arg_parser с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 18:43:35,170 - Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+DEBUG    - 2022-02-13 18:44:02,789 - Была вызвана функция arg_parser с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 18:44:02,789 - Запущен сервер, порт для подключений: 7777, адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов.
+DEBUG    - 2022-02-13 18:55:47,235 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 18:55:47,235 - Сервер запущен с потром 7000и адресом 
+INFO     - 2022-02-13 18:55:58,849 - Установлено соединение с ('127.0.0.1', 56239)
+DEBUG    - 2022-02-13 18:55:58,850 - Была вызвана функция get_message с параметрами (<socket.socket fd=356, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7000), raddr=('127.0.0.1', 56239)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 18:55:58,850 - Клиент ('127.0.0.1', 56239) отключен
+DEBUG    - 2022-02-13 19:04:02,846 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:04:02,846 - Сервер запущен с потром 7000и адресом 
+DEBUG    - 2022-02-13 19:09:18,377 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:09:18,377 - Сервер запущен с потром 7777и адресом 
+DEBUG    - 2022-02-13 19:10:42,909 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:10:42,909 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:10:56,660 - Установлено соединение с ('127.0.0.1', 56274)
+DEBUG    - 2022-02-13 19:10:57,173 - Была вызвана функция get_message с параметрами (<socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56274)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 19:10:57,174 - Клиент ('127.0.0.1', 56274) отключен
+DEBUG    - 2022-02-13 19:12:01,804 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:12:01,805 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:12:23,377 - Установлено соединение с ('127.0.0.1', 56277)
+DEBUG    - 2022-02-13 19:12:23,377 - Была вызвана функция get_message с параметрами (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56277)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 19:12:23,377 - Клиент ('127.0.0.1', 56277) отключен
+DEBUG    - 2022-02-13 19:17:45,060 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:17:45,060 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:17:53,521 - Установлено соединение с ('127.0.0.1', 56305)
+DEBUG    - 2022-02-13 19:17:53,521 - Была вызвана функция get_message с параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56305)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 19:17:53,522 - Клиент ('127.0.0.1', 56305) отключен
+DEBUG    - 2022-02-13 19:19:28,060 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:19:28,060 - Сервер запущен с потром 7777и адресом 
+DEBUG    - 2022-02-13 19:19:42,204 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:19:42,204 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:19:50,337 - Установлено соедение с ПК ('127.0.0.1', 56319)
+DEBUG    - 2022-02-13 19:19:50,338 - Была вызвана функция get_message с параметрами (<socket.socket fd=356, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56319)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:19:50,338 - Разбор сообщения {'action': 'presence', 'time': 1644769190.3374538, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 19:19:50,339 - Была вызвана функция send_message с параметрами (<socket.socket fd=356, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56319)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:20:03,576 - Была вызвана функция get_message с параметрами (<socket.socket fd=356, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56319)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:20:03,577 - Разбор сообщения {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644769203.2014577, 'mess_text': 'asd'}
+DEBUG    - 2022-02-13 19:20:03,577 - Была вызвана функция send_message с параметрами (<socket.socket fd=356, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56319)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:20:30,595 - Была вызвана функция get_message с параметрами (<socket.socket fd=356, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56319)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:20:30,595 - Разбор сообщения {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644769230.16266, 'mess_text': 'AAAAAA'}
+DEBUG    - 2022-02-13 19:20:30,596 - Была вызвана функция send_message с параметрами (<socket.socket fd=356, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56319)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:21:11,683 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:21:11,683 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:21:17,891 - Установлено соедение с ПК ('127.0.0.1', 56329)
+DEBUG    - 2022-02-13 19:21:18,404 - Была вызвана функция get_message с параметрами (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56329)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:21:18,404 - Разбор сообщения {'action': 'presence', 'time': 1644769277.8919322, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 19:21:18,404 - Была вызвана функция send_message с параметрами (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56329)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:21:27,602 - Была вызвана функция get_message с параметрами (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56329)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:21:27,603 - Разбор сообщения {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644769287.1524346, 'mess_text': 'asdad'}
+DEBUG    - 2022-02-13 19:21:27,603 - Была вызвана функция send_message с параметрами (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56329)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:23:02,908 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:23:02,908 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:23:05,578 - Установлено соедение с ПК ('127.0.0.1', 56332)
+DEBUG    - 2022-02-13 19:23:05,579 - Была вызвана функция get_message с параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56332)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:23:05,579 - Разбор сообщения {'action': 'presence', 'time': 1644769385.5781918, 'user': {'account-name': None}}
+DEBUG    - 2022-02-13 19:23:05,580 - Была вызвана функция send_message с параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56332)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:23:21,903 - Была вызвана функция get_message с параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56332)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:23:21,903 - Разбор сообщения {'action': 'message', 'from': None, 'to': 'DIma', 'time': 1644769401.6472569, 'mess_text': 'asda'}
+DEBUG    - 2022-02-13 19:23:21,904 - Была вызвана функция send_message с параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56332)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:25:17,634 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:25:17,634 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:25:23,024 - Установлено соедение с ПК ('127.0.0.1', 56336)
+DEBUG    - 2022-02-13 19:25:23,025 - Была вызвана функция get_message с параметрами (<socket.socket fd=124, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56336)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:25:23,025 - Разбор сообщения {'action': 'presence', 'time': 1644769523.0248075, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 19:25:23,025 - Была вызвана функция send_message с параметрами (<socket.socket fd=124, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56336)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:25:32,724 - Была вызвана функция get_message с параметрами (<socket.socket fd=124, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56336)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:25:32,724 - Разбор сообщения {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644769532.3497512, 'mess_text': 'asdsad'}
+DEBUG    - 2022-02-13 19:25:32,724 - Была вызвана функция send_message с параметрами (<socket.socket fd=124, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56336)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:27:47,449 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:27:47,449 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:27:53,736 - Установлено соединение с ('127.0.0.1', 56357)
+DEBUG    - 2022-02-13 19:27:54,246 - Была вызвана функция get_message с параметрами (<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56357)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:27:54,247 - Разбор сообщения {'action': 'presence', 'time': 1644769673.736526, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 19:27:54,247 - Была вызвана функция send_message с параметрами (<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56357)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:28:04,968 - Была вызвана функция get_message с параметрами (<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56357)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:28:04,968 - Разбор сообщения {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644769684.531773, 'mess_text': 'asdsad'}
+DEBUG    - 2022-02-13 19:28:04,969 - Была вызвана функция send_message с параметрами (<socket.socket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56357)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:28:53,057 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:28:53,057 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:28:58,745 - Установлено соединение с ('127.0.0.1', 56359)
+DEBUG    - 2022-02-13 19:28:58,746 - Была вызвана функция get_message с параметрами (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56359)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:28:58,746 - Разбор сообщения {'action': 'presence', 'time': 1644769738.745782, 'user': {'account-name': 'Di'}}
+DEBUG    - 2022-02-13 19:28:58,746 - Была вызвана функция send_message с параметрами (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56359)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:29:07,413 - Была вызвана функция get_message с параметрами (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56359)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:29:07,414 - Разбор сообщения {'action': 'message', 'from': 'Di', 'to': 'Di', 'time': 1644769747.1759887, 'mess_text': 'asda'}
+DEBUG    - 2022-02-13 19:29:07,414 - Была вызвана функция send_message с параметрами (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56359)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:30:04,162 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:30:04,162 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:30:10,364 - Установлено соединение с ('127.0.0.1', 56364)
+DEBUG    - 2022-02-13 19:30:10,875 - Была вызвана функция get_message с параметрами (<socket.socket fd=388, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56364)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:30:10,875 - Разбор сообщения от клиента : {'action': 'presence', 'time': 1644769810.3647544, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 19:30:10,876 - Была вызвана функция send_message с параметрами (<socket.socket fd=388, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56364)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:30:17,497 - Была вызвана функция get_message с параметрами (<socket.socket fd=388, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56364)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:30:17,497 - Разбор сообщения от клиента : {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644769817.214314, 'mess_text': 'asdas'}
+DEBUG    - 2022-02-13 19:30:17,497 - Была вызвана функция send_message с параметрами (<socket.socket fd=388, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56364)>, {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644769817.214314, 'mess_text': 'asdas'}) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 19:30:17,497 - Сообщение отправлено Dima от Dima
+DEBUG    - 2022-02-13 19:30:51,314 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:30:51,314 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:30:56,481 - Установлено соединение с ('127.0.0.1', 56375)
+DEBUG    - 2022-02-13 19:30:56,994 - Была вызвана функция get_message с параметрами (<socket.socket fd=424, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56375)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:30:56,994 - Разбор сообщения {'action': 'presence', 'time': 1644769856.4811077, 'user': {'account-name': 'Di'}}
+DEBUG    - 2022-02-13 19:30:56,995 - Была вызвана функция send_message с параметрами (<socket.socket fd=424, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56375)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:31:04,666 - Была вызвана функция get_message с параметрами (<socket.socket fd=424, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56375)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:31:04,666 - Разбор сообщения {'action': 'message', 'from': 'Di', 'to': 'Di', 'time': 1644769864.5815284, 'mess_text': 'asdas'}
+DEBUG    - 2022-02-13 19:31:04,666 - Была вызвана функция send_message с параметрами (<socket.socket fd=424, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56375)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:33:05,789 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:33:05,789 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:33:10,720 - Установлено соединение с ('127.0.0.1', 56379)
+DEBUG    - 2022-02-13 19:33:11,229 - Была вызвана функция get_message с параметрами (<socket.socket fd=312, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56379)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:33:11,230 - Разбор сообщения {'action': 'presence', 'time': 1644769990.7206218, 'user': {'account-name': 'Di'}}
+DEBUG    - 2022-02-13 19:33:11,230 - Была вызвана функция send_message с параметрами (<socket.socket fd=312, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56379)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:33:20,971 - Была вызвана функция get_message с параметрами (<socket.socket fd=312, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56379)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:33:20,971 - Разбор сообщения {'action': 'message', 'from': 'Di', 'to': 'Di', 'time': 1644770000.468317, 'mess_text': 'asda'}
+DEBUG    - 2022-02-13 19:33:20,972 - Была вызвана функция send_message с параметрами (<socket.socket fd=312, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56379)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:34:04,980 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:34:04,981 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:34:09,380 - Установлено соединение с ('127.0.0.1', 56382)
+DEBUG    - 2022-02-13 19:34:09,381 - Была вызвана функция get_message с параметрами (<socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56382)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:34:09,381 - Разбор сообщения {'action': 'presence', 'time': 1644770049.3805568, 'user': {'account-name': 'Di'}}
+DEBUG    - 2022-02-13 19:34:09,382 - Была вызвана функция send_message с параметрами (<socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56382)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:34:17,022 - Была вызвана функция get_message с параметрами (<socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56382)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:34:17,023 - Разбор сообщения {'action': 'message', 'from': 'Di', 'to': 'Di', 'time': 1644770056.8962176, 'mess_text': 'adasd'}
+DEBUG    - 2022-02-13 19:34:17,023 - Была вызвана функция send_message с параметрами (<socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56382)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:34:52,346 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:34:52,346 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:34:57,148 - Установлено соединение с ('127.0.0.1', 56387)
+DEBUG    - 2022-02-13 19:34:57,149 - Была вызвана функция get_message с параметрами (<socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56387)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:34:57,149 - Разбор сообщения {'action': 'presence', 'time': 1644770097.1487389, 'user': {'account-name': 'Di'}}
+DEBUG    - 2022-02-13 19:34:57,149 - Была вызвана функция send_message с параметрами (<socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56387)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:35:04,300 - Была вызвана функция get_message с параметрами (<socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56387)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:35:04,301 - Разбор сообщения {'action': 'message', 'from': 'Di', 'to': 'Di', 'time': 1644770104.068995, 'mess_text': 'asd'}
+DEBUG    - 2022-02-13 19:35:04,301 - Была вызвана функция send_message с параметрами (<socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56387)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:36:36,574 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:36:36,574 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:36:40,875 - Установлено соединение с ('127.0.0.1', 56390)
+DEBUG    - 2022-02-13 19:36:40,875 - Была вызвана функция get_message с параметрами (<socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56390)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:36:40,876 - Разбор сообщения {'action': 'presence', 'time': 1644770200.874926, 'user': {'account-name': 'Di'}}
+DEBUG    - 2022-02-13 19:36:40,876 - Была вызвана функция send_message с параметрами (<socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56390)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:36:46,996 - Была вызвана функция get_message с параметрами (<socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56390)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:36:46,996 - Разбор сообщения {'action': 'message', 'from': 'Di', 'to': 'Di', 'time': 1644770206.9326632, 'mess_text': 'ad'}
+DEBUG    - 2022-02-13 19:36:46,996 - Была вызвана функция send_message с параметрами (<socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56390)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:38:43,265 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:38:43,265 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:38:50,317 - Установлено соединение с ('127.0.0.1', 56399)
+DEBUG    - 2022-02-13 19:38:50,318 - Была вызвана функция get_message с параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56399)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:38:50,318 - Разбор сообщения {'action': 'presence', 'time': 1644770330.3175004, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 19:38:50,318 - Была вызвана функция send_message с параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56399)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:38:59,513 - Была вызвана функция get_message с параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56399)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:38:59,513 - Разбор сообщения {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644770339.0924723, 'mess_text': 'asdad'}
+DEBUG    - 2022-02-13 19:38:59,514 - Была вызвана функция send_message с параметрами (<socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56399)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:42:02,491 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:42:02,492 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:42:07,972 - Установлено соединение с ('127.0.0.1', 56406)
+DEBUG    - 2022-02-13 19:42:07,972 - Была вызвана функция get_message с параметрами (<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56406)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:42:07,973 - Разбор сообщения {'action': 'presence', 'time': 1644770527.9710681, 'user': {'account-name': "Dima'"}}
+DEBUG    - 2022-02-13 19:42:07,973 - Была вызвана функция send_message с параметрами (<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56406)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:42:17,628 - Была вызвана функция get_message с параметрами (<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56406)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:42:17,628 - Разбор сообщения {'action': 'message', 'from': "Dima'", 'to': "Dima'", 'time': 1644770537.3627577, 'mess_text': 'sasda'}
+DEBUG    - 2022-02-13 19:42:17,629 - Была вызвана функция send_message с параметрами (<socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56406)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:43:57,266 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:43:57,266 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:44:03,430 - Установлено соединение с ('127.0.0.1', 56410)
+DEBUG    - 2022-02-13 19:44:03,431 - Была вызвана функция get_message с параметрами (<socket.socket fd=292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56410)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:44:03,431 - Разбор сообщения {'action': 'presence', 'time': 1644770643.4305174, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 19:44:03,432 - Была вызвана функция send_message с параметрами (<socket.socket fd=292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56410)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:44:13,613 - Была вызвана функция get_message с параметрами (<socket.socket fd=292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56410)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:44:13,614 - Разбор сообщения {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644770653.4879005, 'mess_text': 'asda'}
+DEBUG    - 2022-02-13 19:44:13,614 - Была вызвана функция send_message с параметрами (<socket.socket fd=292, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56410)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:48:04,585 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:48:04,586 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:48:11,352 - Установлено соединение с ('127.0.0.1', 56442)
+DEBUG    - 2022-02-13 19:48:11,352 - Была вызвана функция get_message с параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56442)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:48:11,353 - Разбор сообщения {'action': 'presence', 'time': 1644770891.35187, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 19:48:11,353 - Была вызвана функция send_message с параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56442)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:48:17,994 - Была вызвана функция get_message с параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56442)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:48:17,995 - Разбор сообщения {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644770897.8575363, 'mess_text': 'asda'}
+DEBUG    - 2022-02-13 19:48:17,995 - Была вызвана функция send_message с параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56442)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:50:02,208 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:50:02,208 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:50:07,964 - Установлено соединение с ('127.0.0.1', 56450)
+DEBUG    - 2022-02-13 19:50:08,469 - Была вызвана функция get_message с параметрами (<socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56450)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:50:08,470 - Разбор сообщения {'action': 'presence', 'time': 1644771007.9630427, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 19:50:08,470 - Была вызвана функция send_message с параметрами (<socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56450)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:50:18,173 - Была вызвана функция get_message с параметрами (<socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56450)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:50:18,174 - Разбор сообщения {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644771017.9081395, 'mess_text': 'asdad'}
+DEBUG    - 2022-02-13 19:50:18,174 - Была вызвана функция send_message с параметрами (<socket.socket fd=296, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56450)>, {'error': 'Некорректный запрос', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:55:43,051 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:55:43,052 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:55:50,940 - Установлено соединение с ('127.0.0.1', 56468)
+DEBUG    - 2022-02-13 19:55:50,940 - Была вызвана функция get_message с параметрами (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56468)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:55:50,940 - Разбор сообщения от клиента : {'action': 'presence', 'time': 1644771350.9405775, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 19:55:50,941 - Была вызвана функция send_message с параметрами (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56468)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:55:58,098 - Была вызвана функция get_message с параметрами (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56468)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:55:58,098 - Разбор сообщения от клиента : {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644771357.7607553, 'mess_text': 'asdad'}
+DEBUG    - 2022-02-13 19:55:58,099 - Была вызвана функция send_message с параметрами (<socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56468)>, {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644771357.7607553, 'mess_text': 'asdad'}) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 19:55:58,099 - Сообщение отправлено Dima от Dima
+DEBUG    - 2022-02-13 19:57:26,270 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 19:57:26,270 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 19:57:36,423 - Установлено соединение с ('127.0.0.1', 56472)
+DEBUG    - 2022-02-13 19:57:36,934 - Была вызвана функция get_message с параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56472)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:57:36,935 - Разбор сообщения от клиента : {'action': 'presence', 'time': 1644771456.4225993, 'user': {'account-name': 'ASD'}}
+DEBUG    - 2022-02-13 19:57:36,935 - Была вызвана функция send_message с параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56472)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:57:44,592 - Была вызвана функция get_message с параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56472)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 19:57:44,592 - Разбор сообщения от клиента : {'action': 'message', 'from': 'ASD', 'to': 'ASD', 'time': 1644771464.4381268, 'mess_text': 'asdasd'}
+DEBUG    - 2022-02-13 19:57:44,593 - Была вызвана функция send_message с параметрами (<socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56472)>, {'action': 'message', 'from': 'ASD', 'to': 'ASD', 'time': 1644771464.4381268, 'mess_text': 'asdasd'}) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 19:57:44,593 - Сообщение отправлено ASD от ASD
+DEBUG    - 2022-02-13 20:27:04,738 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 20:27:04,738 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 20:27:15,114 - Установлено соединение с ('127.0.0.1', 56617)
+DEBUG    - 2022-02-13 20:27:15,617 - Была вызвана функция get_message с параметрами (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56617)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:27:15,617 - Разбор сообщения от клиента : {'action': 'presence', 'time': 1644773235.114353, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 20:27:15,617 - Была вызвана функция send_message с параметрами (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56617)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 20:29:27,691 - Клиент ('127.0.0.1', 56617) отключен
+INFO     - 2022-02-13 20:29:36,895 - Установлено соединение с ('127.0.0.1', 56621)
+DEBUG    - 2022-02-13 20:29:36,895 - Была вызвана функция get_message с параметрами (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56621)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:29:36,896 - Разбор сообщения от клиента : {'action': 'presence', 'time': 1644773376.8954933, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 20:29:36,896 - Была вызвана функция send_message с параметрами (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56621)>, {'error': 'Имя пользователя уже занято.', 'response': 400}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:31:19,720 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 20:31:19,720 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 20:31:26,388 - Установлено соединение с ('127.0.0.1', 56639)
+DEBUG    - 2022-02-13 20:31:26,389 - Была вызвана функция get_message с параметрами (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56639)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:31:26,389 - Разбор сообщения от клиента : {'action': 'presence', 'time': 1644773486.3889017, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 20:31:26,389 - Была вызвана функция send_message с параметрами (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56639)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:33:45,577 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 20:33:45,577 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 20:34:04,431 - Установлено соединение с ('127.0.0.1', 56654)
+DEBUG    - 2022-02-13 20:34:04,432 - Была вызвана функция get_message с параметрами (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56654)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:34:04,432 - Разбор сообщения от клиента : {'action': 'presence', 'time': 1644773644.4319215, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 20:34:04,433 - Была вызвана функция send_message с параметрами (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56654)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:34:25,366 - Была вызвана функция get_message с параметрами (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56654)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:34:25,366 - Разбор сообщения от клиента : {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644773665.0803154, 'mess_text': 'asda'}
+DEBUG    - 2022-02-13 20:34:25,367 - Была вызвана функция send_message с параметрами (<socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56654)>, {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644773665.0803154, 'mess_text': 'asda'}) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 20:34:25,367 - Сообщение отправлено Dima от Dima
+DEBUG    - 2022-02-13 20:34:46,748 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 20:34:46,748 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 20:35:01,200 - Установлено соединение с ('127.0.0.1', 56658)
+DEBUG    - 2022-02-13 20:35:01,706 - Была вызвана функция get_message с параметрами (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56658)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:35:01,706 - Разбор сообщения от клиента : {'action': 'presence', 'time': 1644773701.2007275, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 20:35:01,707 - Была вызвана функция send_message с параметрами (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56658)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:35:11,429 - Была вызвана функция get_message с параметрами (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56658)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:35:11,430 - Разбор сообщения от клиента : {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644773711.003011, 'mess_text': 'ПРивет'}
+DEBUG    - 2022-02-13 20:35:11,430 - Была вызвана функция send_message с параметрами (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56658)>, {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644773711.003011, 'mess_text': 'ПРивет'}) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 20:35:11,430 - Сообщение отправлено Dima от Dima
+DEBUG    - 2022-02-13 20:35:34,987 - Была вызвана функция get_message с параметрами (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56658)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:35:34,988 - Разбор сообщения от клиента : {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644773734.5372727, 'mess_text': 'asda'}
+DEBUG    - 2022-02-13 20:35:34,988 - Была вызвана функция send_message с параметрами (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56658)>, {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644773734.5372727, 'mess_text': 'asda'}) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 20:35:34,988 - Сообщение отправлено Dima от Dima
+DEBUG    - 2022-02-13 20:35:49,787 - Была вызвана функция get_message с параметрами (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56658)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:35:49,787 - Разбор сообщения от клиента : {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644773749.4467144, 'mess_text': 'asdasd'}
+DEBUG    - 2022-02-13 20:35:49,788 - Была вызвана функция send_message с параметрами (<socket.socket fd=404, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56658)>, {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644773749.4467144, 'mess_text': 'asdasd'}) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 20:35:49,788 - Сообщение отправлено Dima от Dima
+DEBUG    - 2022-02-13 20:37:02,873 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 20:37:02,873 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 20:37:09,227 - Установлено соединение с ('127.0.0.1', 56661)
+DEBUG    - 2022-02-13 20:37:09,228 - Была вызвана функция get_message с параметрами (<socket.socket fd=280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56661)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:37:09,228 - Разбор сообщения от клиента : {'action': 'presence', 'time': 1644773829.2272758, 'user': {'account-name': 'fds'}}
+DEBUG    - 2022-02-13 20:37:09,229 - Была вызвана функция send_message с параметрами (<socket.socket fd=280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56661)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:37:16,905 - Была вызвана функция get_message с параметрами (<socket.socket fd=280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56661)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:37:16,906 - Разбор сообщения от клиента : {'action': 'message', 'from': 'fds', 'to': 'fds', 'time': 1644773836.875562, 'mess_text': 'asd'}
+DEBUG    - 2022-02-13 20:37:16,906 - Была вызвана функция send_message с параметрами (<socket.socket fd=280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56661)>, {'action': 'message', 'from': 'fds', 'to': 'fds', 'time': 1644773836.875562, 'mess_text': 'asd'}) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 20:37:16,906 - Сообщение отправлено fds от fds
+DEBUG    - 2022-02-13 20:37:27,138 - Была вызвана функция get_message с параметрами (<socket.socket fd=280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56661)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:37:27,139 - Разбор сообщения от клиента : {'action': 'message', 'from': 'fds', 'to': 'fds', 'time': 1644773847.0397832, 'mess_text': 'asdsd'}
+DEBUG    - 2022-02-13 20:37:27,139 - Была вызвана функция send_message с параметрами (<socket.socket fd=280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56661)>, {'action': 'message', 'from': 'fds', 'to': 'fds', 'time': 1644773847.0397832, 'mess_text': 'asdsd'}) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 20:37:27,139 - Сообщение отправлено fds от fds
+DEBUG    - 2022-02-13 20:37:53,308 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 20:37:53,308 - Сервер запущен с потром 7777и адресом 
+DEBUG    - 2022-02-13 20:38:19,912 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-13 20:38:19,912 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-13 20:38:28,751 - Установлено соединение с ('127.0.0.1', 56663)
+DEBUG    - 2022-02-13 20:38:28,752 - Была вызвана функция get_message с параметрами (<socket.socket fd=148, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56663)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:38:28,752 - Разбор сообщения от клиента : {'action': 'presence', 'time': 1644773908.7510364, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-13 20:38:28,752 - Была вызвана функция send_message с параметрами (<socket.socket fd=148, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56663)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:38:49,751 - Была вызвана функция get_message с параметрами (<socket.socket fd=148, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56663)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-13 20:38:49,751 - Разбор сообщения от клиента : {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644773929.346167, 'mess_text': "Happy valentin's day"}
+DEBUG    - 2022-02-13 20:38:49,751 - Была вызвана функция send_message с параметрами (<socket.socket fd=148, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56663)>, {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644773929.346167, 'mess_text': "Happy valentin's day"}) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-13 20:38:49,751 - Сообщение отправлено Dima от Dima
+DEBUG    - 2022-02-14 19:30:09,038 - Была вызвана функция parse_arg с параметрами () , {}Вызов из модуля __main__Вызов из функции main()
+INFO     - 2022-02-14 19:30:09,038 - Сервер запущен с потром 7777и адресом 
+INFO     - 2022-02-14 19:30:17,246 - Установлено соединение с ('127.0.0.1', 58645)
+DEBUG    - 2022-02-14 19:30:17,751 - Была вызвана функция get_message с параметрами (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58645)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-14 19:30:17,751 - Разбор сообщения от клиента : {'action': 'presence', 'time': 1644856217.2469287, 'user': {'account-name': 'Dima'}}
+DEBUG    - 2022-02-14 19:30:17,751 - Была вызвана функция send_message с параметрами (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58645)>, {'response': 200}) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-14 19:30:24,386 - Была вызвана функция get_message с параметрами (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58645)>,) , {}Вызов из модуля common.utilsВызов из функции main()
+DEBUG    - 2022-02-14 19:30:24,386 - Разбор сообщения от клиента : {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644856224.3682296, 'mess_text': '123'}
+DEBUG    - 2022-02-14 19:30:24,387 - Была вызвана функция send_message с параметрами (<socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58645)>, {'action': 'message', 'from': 'Dima', 'to': 'Dima', 'time': 1644856224.3682296, 'mess_text': '123'}) , {}Вызов из модуля common.utilsВызов из функции main()
+INFO     - 2022-02-14 19:30:24,387 - Сообщение отправлено Dima от Dima
