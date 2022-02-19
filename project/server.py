@@ -1,5 +1,6 @@
 import argparse
 import os
+import threading
 import time
 import socket
 import sys
@@ -7,6 +8,7 @@ from select import select
 import logging
 from decorators import logg
 from metaclasses import ServerMeta
+from server_database import ServerDataBase
 
 sys.path.append('common\\')
 from tests.err import IncorrectDataRecivedError
@@ -31,15 +33,17 @@ def parse_arg():
     return listen_address, listen_port
 
 
-class Server(metaclass=ServerMeta):
+class Server(threading.Thread, metaclass=ServerMeta):
     port = Port()
 
-    def __init__(self, listen_address, listen_port):
+    def __init__(self, listen_address, listen_port, database):
         self.address = listen_address
         self.port = listen_port
         self.clients = []
         self.names = dict()
         self.messages = []
+        self.database = database
+        super().__init__()
 
     def init_socket(self):
         LOGGER.info(f'Сервер запущен с потром {self.port}'
@@ -73,7 +77,7 @@ class Server(metaclass=ServerMeta):
             if recv_data_list:
                 for client_with_message in recv_data_list:
                     try:
-                        self.process_client_message(get_message(client_with_message),client_with_message)
+                        self.process_client_message(get_message(client_with_message), client_with_message)
                     except:
                         LOGGER.info((f'Клиент {client_with_message.getpeername()} отключен'))
                         self.clients.remove(client_with_message)
@@ -100,7 +104,10 @@ class Server(metaclass=ServerMeta):
         if ACTION in message and message[ACTION] == PRESENCE and TIME in message and USER in message:
             if message[USER][ACCOUNT_NAME] not in self.names.keys():
                 self.names[message[USER][ACCOUNT_NAME]] = client
+                client_ip, client_port = client.getName()
+                self.database.user_login(message[USER][ACCOUNT_NAME], client_ip, client_port)
                 send_message(client, RESPONSE_200)
+
             else:
                 response = RESPONSE_400
                 response[ERROR] = 'Имя пользователя уже занято.'
@@ -124,10 +131,40 @@ class Server(metaclass=ServerMeta):
             return
 
 
+def print_help():
+    print('Поддерживаемые комманды:')
+    print('users - список известных пользователей')
+    print('connected - список подключённых пользователей')
+    print('loghist - история входов пользователя')
+    print('exit - завершение работы сервера.')
+    print('help - вывод справки по поддерживаемым командам')
+
+
 def main():
     listen_address, listen_port = parse_arg()
-    server = Server(listen_address, listen_port)
-    server.main_loop()
+    database = ServerDataBase()
+    server = Server(listen_address, listen_port, database)
+    server.daemon = True
+    server.start()
+    print_help()
+    while True:
+        command = input('Введите команду: ')
+        if command == 'help':
+            print_help()
+        elif command == 'exit':
+            break
+        elif command == 'users':
+            for user in sorted(database.all_users_list()):
+                print(f'Пользователь {user[0]}: последний вход: {user[1]}')
+        elif command == 'loghist':
+            name = input('Введите имя пользователя: ')
+            for user in sorted(database.all_history_login(name)):
+                print(f'{user[0]} время входа: {user[1]}, Входа с {user[2]}: {user[3]}')
+        elif command == 'connected':
+            for user in sorted(database.all_active_users()):
+                print(f'{user[0]}:{user[1]}, время установки соединения: {user[2]}')
+        else:
+            print('Команда не распознана')
 
 
 if __name__ == '__main__':
