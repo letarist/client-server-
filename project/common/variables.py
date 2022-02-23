@@ -21,11 +21,23 @@ MESSAGE_TEXT = 'mess_text'
 SENDER = 'from'
 DESTINATION = 'to'
 EXIT = 'exit'
+
+GET_CONTACTS = 'get_contacts'
+LIST_INFO = 'data_list'
+ADD_CONTACT = 'add'
+CONTACT_DEL = 'remove'
+USERS_LIST = 'get_users'
+
 RESPONSE_400 = {
     ERROR: None,
     RESPONSE: 400
 }
+
 RESPONSE_200 = {
     RESPONSE: 200
 }
 
+RESPONSE_202 = {
+    RESPONSE: 202,
+    LIST_INFO: None
+}

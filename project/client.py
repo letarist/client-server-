@@ -1,3 +1,4 @@
+import datetime
 import json
 from socket import socket, AF_INET, SOCK_STREAM
 import sys
@@ -6,15 +7,17 @@ import logging
 import argparse
 import threading
 import dis
+from err import ServerError
 
 sys.path.append('common\\')
 from tests.err import ReqFieldMissingError
 from common.variables import DEFAULT_PORT, DEFAULT_IP_ADDRESS, ACTION, \
     TIME, USER, ACCOUNT_NAME, SENDER, PRESENCE, RESPONSE, \
-    ERROR, MESSAGE, MESSAGE_TEXT, DESTINATION, EXIT
+    ERROR, MESSAGE, MESSAGE_TEXT, DESTINATION, EXIT, GET_CONTACTS, LIST_INFO, ADD_CONTACT, CONTACT_DEL, USERS_LIST
 from common.utils import send_message, get_message
 from decorators import logg
 from metaclasses import ClientMeta
+from client_database import ClientDataBase
 
 CLIENT_LOGGER = logging.getLogger('client')
 
@@ -90,7 +93,8 @@ class ClientReader(threading.Thread, metaclass=ClientMeta):
                 if ACTION in message and message[ACTION] == MESSAGE and SENDER in message and DESTINATION in message \
                         and MESSAGE_TEXT in message and message[DESTINATION] == self.account_name:
                     print(f'\nПолучено сообщение от пользователя {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
-                    CLIENT_LOGGER.info(f'Получено сообщение от пользователя {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
+                    CLIENT_LOGGER.info(
+                        f'Получено сообщение от пользователя {message[SENDER]}:\n{message[MESSAGE_TEXT]}')
                 else:
                     CLIENT_LOGGER.error(f'Получено некорректное сообщение от сервера: {message}')
             except (OSError, ConnectionError, ConnectionAbortedError, ConnectionResetError):
@@ -140,6 +144,86 @@ def parser_arg():
     return server_address, server_port, client_name
 
 
+def load_database(sock, database, username):
+    try:
+        users_list = user_list(sock, username)
+    except ServerError:
+        CLIENT_LOGGER.error('Ошибка запроса списка известных пользоваетелей! ')
+    else:
+        database.add_users(users_list)
+
+    try:
+        contact_list = contacts_list(sock, username)
+    except ServerError:
+        CLIENT_LOGGER.error(f'Ошибка запроса списка конткатов! ')
+    else:
+        for contact in contact_list:
+            database.contact_add(contact)
+
+
+def contacts_list(sock, name):
+    CLIENT_LOGGER.debug(f'Запрос контакт-листа от {name}')
+    req = {
+        ACTION: GET_CONTACTS,
+        TIME: time.time(),
+        USER: name
+    }
+    CLIENT_LOGGER.debug(f'Сформирован запрос {req}')
+    send_message(sock, req)
+    answer = get_message(sock)
+    if RESPONSE in answer and answer[RESPONSE] == 202:
+        return answer[LIST_INFO]
+    else:
+        raise ServerError
+
+
+def add_contact(sock, name, contact):
+    CLIENT_LOGGER.debug(f'Создание контакта {contact}')
+    req = {
+        ACTION: ADD_CONTACT,
+        TIME: time.time(),
+        USER: name,
+        ACCOUNT_NAME: contact
+    }
+    send_message(sock, req)
+    answer = get_message(sock)
+    if RESPONSE in answer and answer[RESPONSE] == 200:
+        print('Контакт создан!')
+    else:
+        raise ServerError('Ошибка создания контакта')
+
+
+def remove_contact(sock, name, contact):
+    CLIENT_LOGGER.debug(f'Запрос на удаление {contact}')
+    req = {
+        ACTION: CONTACT_DEL,
+        TIME: time.time(),
+        USER: name,
+        ACCOUNT_NAME: contact
+    }
+    send_message(sock, req)
+    answer = get_message(sock)
+    if RESPONSE in answer and answer[RESPONSE] == 200:
+        print(f'Контакт {contact} удален!')
+    else:
+        raise ServerError('Ошибка удаления контакта')
+
+
+def user_list(sock, username):
+    CLIENT_LOGGER.debug(f'Запрос списка пользователей')
+    req = {
+        ACTION: USERS_LIST,
+        TIME: time.time(),
+        ACCOUNT_NAME: username
+    }
+    send_message(sock, req)
+    answer = get_message(sock)
+    if RESPONSE in answer and answer[RESPONSE] == 202:
+        return answer[LIST_INFO]
+    else:
+        raise ServerError
+
+
 def main():
     server_address, server_port, client_name = parser_arg()
     print('Добро пожаловать в консольный мессенджер ')
@@ -150,6 +234,7 @@ def main():
     CLIENT_LOGGER.info(f'Запуск клиента с параметрами  {server_address}: порт {server_port}, имя {client_name}')
     try:
         transport = socket(AF_INET, SOCK_STREAM)
+        transport.settimeout(1)
         transport.connect((server_address, server_port))
         send_message(transport, create_presence(client_name))
         answer = process_responce(get_message(transport))
