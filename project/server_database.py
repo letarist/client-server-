@@ -11,18 +11,18 @@ class ServerDataBase:
             self.id = None
 
     class ActiveUsers:
-        def __init__(self, user_id, ip_addr, port, date_login):
+        def __init__(self, user_id, ip_address, port, login_time):
             self.user = user_id
-            self.ip_addr = ip_addr
+            self.ip_address = ip_address
             self.port = port
-            self.date_login = date_login
+            self.login_time = login_time
             self.id = None
 
     class HistoryLogin:
-        def __init__(self, name, date_login, ip, port):
+        def __init__(self, name, date_time, ip, port):
             self.id = None
             self.name = name
-            self.date_login = date_login
+            self.date_time = date_time
             self.ip = ip
             self.port = port
 
@@ -40,7 +40,6 @@ class ServerDataBase:
             self.accepted = 0
 
     def __init__(self, path):
-        print(path)
         self.database_engine = create_engine(f'sqlite:///{path}', echo=False, pool_recycle=7200,
                                              connect_args={'check_same_thread': False})
 
@@ -190,15 +189,15 @@ class ServerDataBase:
 if __name__ == '__main__':
     if __name__ == '__main__':
         test_db = ServerDataBase('server_base.db3')
-        test_db.user_login('1111', '192.168.1.113', 8080)
-        test_db.user_login('McG2', '192.168.1.113', 8081)
+        test_db.user_login('Dima', '192.168.1.113', 8080)
+        test_db.user_login('Liana', '192.168.1.113', 8081)
         print(test_db.all_users_list())
         print(test_db.all_active_users())
-        test_db.user_logout('McG2')
+        test_db.user_logout('Liana')
         print(test_db.all_history_login('re'))
         test_db.add_contact('test2', 'test1')
         test_db.add_contact('test1', 'test3')
         test_db.add_contact('test1', 'test6')
         test_db.remove_contact('test1', 'test3')
-        test_db.process_message('McG2', '1111')
+        test_db.process_message('Dima', '1111')
         print(test_db.message_history())

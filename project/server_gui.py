@@ -163,7 +163,7 @@ class ConfWindow(QDialog):
         self.show()
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
     # app = QApplication(sys.argv)
     # main_window = MainWindow()
     # main_window.statusBar().showMessage('Test Statusbar Message')
@@ -182,16 +182,16 @@ if __name__ == '__main__':
     #
     # app.exec_()
 
-    app = QApplication(sys.argv)
-    window = HistoryWidget()
-    test_list = QStandardItemModel(window)
-    test_list.setHorizontalHeaderLabels(
-        ['Имя Клиента', 'Последний раз входил', 'Отправлено', 'Получено'])
-    test_list.appendRow(
-        [QStandardItem('test1'), QStandardItem('Fri Dec 12 16:20:34 2020'), QStandardItem('2'), QStandardItem('3')])
-    test_list.appendRow(
-        [QStandardItem('test2'), QStandardItem('Fri Dec 12 16:23:12 2020'), QStandardItem('8'), QStandardItem('5')])
-    window.history.setModel(test_list)
-    window.history.resizeColumnsToContents()
-
-    app.exec_()
+    # app = QApplication(sys.argv)
+    # window = HistoryWidget()
+    # test_list = QStandardItemModel(window)
+    # test_list.setHorizontalHeaderLabels(
+    #     ['Имя Клиента', 'Последний раз входил', 'Отправлено', 'Получено'])
+    # test_list.appendRow(
+    #     [QStandardItem('test1'), QStandardItem('Fri Dec 12 16:20:34 2020'), QStandardItem('2'), QStandardItem('3')])
+    # test_list.appendRow(
+    #     [QStandardItem('test2'), QStandardItem('Fri Dec 12 16:23:12 2020'), QStandardItem('8'), QStandardItem('5')])
+    # window.history.setModel(test_list)
+    # window.history.resizeColumnsToContents()
+    #
+    # app.exec_()
