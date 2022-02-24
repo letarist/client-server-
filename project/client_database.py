@@ -60,7 +60,7 @@ class ClientDataBase:
             self.session.add(user_know)
         self.session.commit()
 
-    def contact_add(self, user):
+    def add_contact(self, user):
         if not self.session.query(self.Contacts).filter_by(username=user).count():
             contact = self.Contacts(user)
             self.session.add(contact)

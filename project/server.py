@@ -12,7 +12,6 @@ from metaclasses import ServerMeta
 from server_database import ServerDataBase
 from PyQt5.QtWidgets import QApplication, QMessageBox
 from PyQt5.QtCore import QTimer
-from PyQt5.QtGui import QStandardItemModel, QStandardItem
 from server_gui import HistoryWidget, ConfWindow, MainWindow, gui_create_model, create_stat_model
 
 sys.path.append('common\\')
@@ -57,16 +56,18 @@ class Server(threading.Thread, metaclass=ServerMeta):
         LOGGER.info(f'Сервер запущен с потром {self.port}'
                     f'и адресом {self.address}')
         transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        transport.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         transport.bind((self.address, self.port))
         transport.settimeout(0.5)
-        self.socket = transport
-        self.socket.listen()
 
-    def main_loop(self):
+        self.sock = transport
+        self.sock.listen()
+
+    def run(self):
         self.init_socket()
         while True:
             try:
-                client, client_address = self.socket.accept()
+                client, client_address = self.sock.accept()
             except OSError:
                 pass
             else:
@@ -80,7 +81,7 @@ class Server(threading.Thread, metaclass=ServerMeta):
                 if self.clients:
                     recv_data_list, send_data_list, err_list = select(self.clients, self.clients, [], 0)
             except OSError:
-                pass
+                LOGGER.error(f'Ошибка работы с сокетами ')
 
             if recv_data_list:
                 for client_with_message in recv_data_list:

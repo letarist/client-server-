@@ -1,9 +1,10 @@
 import json
 import sys
 import os
+
 sys.path.append('\\common')
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from variables import MAX_PACKAGE_LENGTH,ENCODING
+from variables import MAX_PACKAGE_LENGTH, ENCODING
 from decorators import logg
 
 
@@ -15,7 +16,6 @@ def get_message(client):
         response = json.loads(json_response)
         if isinstance(response, dict):
             return response
-
 
 
 @logg
