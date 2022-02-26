@@ -1,11 +1,8 @@
 import json
 import sys
-import os
-
-sys.path.append('\\common')
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from variables import MAX_PACKAGE_LENGTH, ENCODING
+sys.path.append('../')
 from decorators import logg
+from common.variables import *
 
 
 @logg

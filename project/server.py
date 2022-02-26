@@ -18,7 +18,7 @@ sys.path.append('common\\')
 from tests.err import IncorrectDataRecivedError
 from common.variables import ACTION, DEFAULT_PORT, MAX_CONNECTIONS, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR, \
     MESSAGE, MESSAGE_TEXT, SENDER, EXIT, DESTINATION, RESPONSE_200, RESPONSE_400, RESPONSE_202, LIST_INFO, ADD_CONTACT, \
-    CONTACT_DEL, USERS_LIST, GET_CONTACTS
+    REMOVE_CONTACT, USERS_REQUEST, GET_CONTACTS
 from common.utils import get_message, send_message
 from descriptors import Port
 
@@ -159,7 +159,7 @@ class Server(threading.Thread, metaclass=ServerMeta):
             self.names[message[ACCOUNT_NAME]].close()
             del self.names[message[ACCOUNT_NAME]]
             with conflag_lock:
-                new_connection = True
+                connection = True
             return
         elif ACTION in message and message[ACTION] == GET_CONTACTS and USER in message and \
                 self.names[message[USER]] == client:
@@ -170,11 +170,11 @@ class Server(threading.Thread, metaclass=ServerMeta):
                 and self.names[message[USER]] == client:
             self.database.add_contact(message[USER], message[ACCOUNT_NAME])
             send_message(client, RESPONSE_200)
-        elif ACTION in message and message[ACTION] == CONTACT_DEL and ACCOUNT_NAME in message and USER in message \
+        elif ACTION in message and message[ACTION] == REMOVE_CONTACT and ACCOUNT_NAME in message and USER in message \
                 and self.names[message[USER]] == client:
             self.database.remove_contact(message[USER], message[ACCOUNT_NAME])
             send_message(client, RESPONSE_200)
-        elif ACTION in message and message[ACTION] == USERS_LIST and ACCOUNT_NAME in message \
+        elif ACTION in message and message[ACTION] == USERS_REQUEST and ACCOUNT_NAME in message \
                 and self.names[message[ACCOUNT_NAME]] == client:
             response = RESPONSE_202
             response[LIST_INFO] = [user[0]

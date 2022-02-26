@@ -5,9 +5,8 @@ from PyQt5.QtGui import QStandardItemModel, QStandardItem
 from PyQt5.QtCore import Qt
 from server_database import ServerDataBase
 
-
 def gui_create_model(database):
-    list_users = database.all_active_users()
+    list_users = database.active_users_list()
     list_table = QStandardItemModel()
     list_table.setHorizontalHeaderLabels(['Имя клиента', 'IP', 'Порт', 'Время'])
     for row in list_users:
