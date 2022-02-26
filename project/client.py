@@ -1,6 +1,6 @@
 import datetime
 import json
-from socket import socket, AF_INET, SOCK_STREAM
+import socket
 import sys
 import time
 import logging
@@ -186,7 +186,7 @@ def create_presence(account_name):
         TIME: time.time(),
         USER: {
             ACCOUNT_NAME: account_name
-        },
+        }
     }
     CLIENT_LOGGER.debug(f'Сформировано {PRESENCE} сообщение для пользователя {account_name}')
     return out
@@ -200,6 +200,7 @@ def process_responce(message):
             return '200 : OK'
         elif message[RESPONSE] == 400:
             CLIENT_LOGGER.critical(f'400: {message[ERROR]}')
+            raise ServerError(f'400 : {message[ERROR]}')
     raise ReqFieldMissingError(RESPONSE)
 
 
@@ -287,15 +288,12 @@ def remove_contact(sock, name, contact):
 
 
 def database_load(sock, database, username):
-    # Загружаем список известных пользователей
     try:
         users_list = user_list_request(sock, username)
     except ServerError:
         CLIENT_LOGGER.error('Ошибка запроса списка известных пользователей.')
     else:
         database.add_users(users_list)
-
-    # Загружаем список контактов
     try:
         contacts_list = req_contact_list(sock, username)
     except ServerError:
@@ -315,9 +313,7 @@ def main():
     CLIENT_LOGGER.info(f'Запуск клиента с параметрами  {server_address}: порт {server_port}, имя {client_name}')
 
     try:
-        transport = socket(AF_INET, SOCK_STREAM)
-
-        # Таймаут 1 секунда, необходим для освобождения сокета.
+        transport = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         transport.settimeout(1)
 
         transport.connect((server_address, server_port))
