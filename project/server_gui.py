@@ -5,23 +5,24 @@ from PyQt5.QtGui import QStandardItemModel, QStandardItem
 from PyQt5.QtCore import Qt
 from server_database import ServerDataBase
 
+
 def gui_create_model(database):
-    list_users = database.active_users_list()
-    list_table = QStandardItemModel()
-    list_table.setHorizontalHeaderLabels(['Имя клиента', 'IP', 'Порт', 'Время'])
+    list_users = database.all_active_users()
+    list_window = QStandardItemModel()
+    list_window.setHorizontalHeaderLabels(['Имя Клиента', 'IP Адрес', 'Порт', 'Время подключения'])
     for row in list_users:
         user, ip, port, time = row
         user = QStandardItem(user)
         user.setEditable(False)
         ip = QStandardItem(ip)
         ip.setEditable(False)
-        port = QStandardItem(port)
+        port = QStandardItem(str(port))
         port.setEditable(False)
+        # Уберём миллисекунды из строки времени, т.к. такая точность не требуется.
         time = QStandardItem(str(time.replace(microsecond=0)))
         time.setEditable(False)
-        list_table.appendRow([user, ip, port, time])
-
-    return list_table
+        list_window.appendRow([user, ip, port, time])
+    return list_window
 
 
 def create_stat_model(database):
@@ -75,6 +76,7 @@ class MainWindow(QMainWindow):
         self.active_clients.setFixedSize(780, 400)
 
         self.show()
+
 
 class HistoryWidget(QDialog):
     def __init__(self):

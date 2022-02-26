@@ -39,7 +39,7 @@ class ClientMainWindow(QMainWindow):
         self.contacts_model = None
         self.history_model = None
         self.messages = QMessageBox()
-        self.current_chat = None  # Текущий контакт с которым идёт обмен сообщениями
+        self.current_chat = None
         self.ui.list_messages.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
         self.ui.list_messages.setWordWrap(True)
         self.ui.list_contacts.doubleClicked.connect(self.select_active_user)
@@ -91,13 +91,10 @@ class ClientMainWindow(QMainWindow):
         self.ui.list_messages.scrollToBottom()
 
     def select_active_user(self):
-        # Выбранный пользователем контакт находится в выделенном элементе в QListView
         self.current_chat = self.ui.list_contacts.currentIndex().data()
-        # вызываем основную функцию
         self.set_active_user()
 
     def set_active_user(self):
-        # Ставим надпись и активируем кнопки
         self.ui.label_new_message.setText(f'Введите сообщение для {self.current_chat}:')
         self.ui.btn_clear.setDisabled(False)
         self.ui.btn_send.setDisabled(False)
@@ -171,7 +168,6 @@ class ClientMainWindow(QMainWindow):
                 self.set_disabled_input()
 
     def send_message(self):
-        # Текст в поле, проверяем что поле не пустое затем забирается сообщение и поле очищается
         message_text = self.ui.text_message.toPlainText()
         self.ui.text_message.clear()
         if not message_text:
@@ -207,7 +203,6 @@ class ClientMainWindow(QMainWindow):
                     self.set_active_user()
             else:
                 print('NO')
-                # Раз нет, спрашиваем хотим ли добавить юзера в контакты.
                 if self.messages.question(self, 'Новое сообщение',
                                           f'Получено новое сообщение от {sender}.\n '
                                           f'Данного пользователя нет в вашем контакт-листе.\n'

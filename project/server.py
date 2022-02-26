@@ -120,11 +120,7 @@ class Server(threading.Thread, metaclass=ServerMeta):
     def process_client_message(self, message, client):
         global connection
         LOGGER.debug(f'Разбор сообщения от клиента : {message}')
-
-        # Если это сообщение о присутствии, принимаем и отвечаем
         if ACTION in message and message[ACTION] == PRESENCE and TIME in message and USER in message:
-            # Если такой пользователь ещё не зарегистрирован, регистрируем,
-            # иначе отправляем ответ и завершаем соединение.
             if message[USER][ACCOUNT_NAME] not in self.names.keys():
                 self.names[message[USER][ACCOUNT_NAME]] = client
                 client_ip, client_port = client.getpeername()
@@ -140,9 +136,6 @@ class Server(threading.Thread, metaclass=ServerMeta):
                 self.clients.remove(client)
                 client.close()
             return
-
-
-
         elif ACTION in message and message[ACTION] == MESSAGE and DESTINATION in message and TIME in message \
                 and SENDER in message and MESSAGE_TEXT in message and self.names[message[SENDER]] == client:
             self.messages.append(message)
