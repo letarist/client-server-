@@ -3,9 +3,7 @@ import sys
 import unittest
 from unittest.mock import patch
 
-# sys.path.append(os.path.join(os.getcwd(), '..\\'))
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-print(sys.path)
 from server import process_client_message
 from common.variables import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE
 

@@ -1,10 +1,10 @@
-import sys
 import logging
+import socket
+import sys
+import traceback
 
 import log.client_log_config
 import log.server_log_config
-import traceback
-import socket
 
 if sys.argv[0].find('client') == -1:
     LOGGER = logging.getLogger('server')
@@ -21,6 +21,7 @@ def logg(func):
         return res
 
     return wrapper
+
 
 def login_required(func):
     """

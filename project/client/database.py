@@ -1,11 +1,13 @@
 import datetime
+import os
 import sys
 
-sys.path.append('../')
-from common.variables import *
 from sqlalchemy import create_engine, Table, Column, Integer, String, Text, MetaData, DateTime
 from sqlalchemy.orm import mapper, sessionmaker
-import os
+
+from common.variables import *
+
+sys.path.append('../')
 
 
 class ClientDatabase:
@@ -26,6 +28,7 @@ class ClientDatabase:
         def __init__(self, contact):
             self.id = None
             self.name = contact
+
     def __init__(self, name):
         path = os.path.dirname(os.path.realpath(__file__))
         filename = f'client_{name}.db3'
@@ -64,7 +67,7 @@ class ClientDatabase:
     def add_contact(self, contact):
         if not self.session.query(
                 self.Contacts).filter_by(
-                name=contact).count():
+            name=contact).count():
             contact_row = self.Contacts(contact)
             self.session.add(contact_row)
             self.session.commit()
@@ -100,7 +103,7 @@ class ClientDatabase:
     def check_user(self, user):
         if self.session.query(
                 self.KnownUsers).filter_by(
-                username=user).count():
+            username=user).count():
             return True
         else:
             return False
@@ -120,10 +123,11 @@ class ClientDatabase:
                  history_row.message,
                  history_row.date) for history_row in query.all()]
 
+
 if __name__ == '__main__':
     test_db = ClientDatabase('test1')
     for i in ['test3', 'test4', 'test5']:
-       test_db.add_contact(i)
+        test_db.add_contact(i)
     test_db.add_contact('test4')
     test_db.add_users(['test1', 'test2', 'test3', 'test4', 'test5'])
     test_db.save_message('test2', 'in', f'Привет! я тестовое сообщение от {datetime.datetime.now()}!')

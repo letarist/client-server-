@@ -1,21 +1,23 @@
-import socket
-import sys
-import time
-import logging
+import binascii
 import json
-import threading
 import hashlib
 import hmac
-import binascii
+import logging
+import socket
+import sys
+
+import threading
+import time
+
 from PyQt5.QtCore import pyqtSignal, QObject
 
-sys.path.append('../')
 from common.utils import *
 from common.variables import *
 from err import ServerError
 
 logger = logging.getLogger('client_dist')
 socket_lock = threading.Lock()
+sys.path.append('../')
 
 
 class ClientTransport(threading.Thread, QObject):

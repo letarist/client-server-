@@ -1,6 +1,5 @@
-import logging
-import log.client_log_config
 import argparse
+import logging
 import sys
 import os
 from Cryptodome.PublicKey import RSA
@@ -13,8 +12,10 @@ from client.database import ClientDatabase
 from client.transport import ClientTransport
 from client.main_window import ClientMainWindow
 from client.start_dialog import UserNameDialog
+import log.client_log_config
 
 logger = logging.getLogger('client_dist')
+
 
 @logg
 def arg_parser():
@@ -36,6 +37,7 @@ def arg_parser():
         exit(1)
 
     return server_address, server_port, client_name, client_passwd
+
 
 if __name__ == '__main__':
     server_address, server_port, client_name, client_passwd = arg_parser()

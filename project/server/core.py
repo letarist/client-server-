@@ -1,12 +1,12 @@
-import threading
+import binascii
+import json
+import hmac
 import logging
 import select
 import socket
-import json
-import hmac
-import binascii
 import os
 import sys
+import threading
 sys.path.append('../')
 from metaclasses import ServerMeta
 from descriptors import Port
@@ -14,7 +14,6 @@ from common.variables import *
 from common.utils import send_message, get_message
 from decorators import login_required
 
-# Загрузка логера
 logger = logging.getLogger('server_dist')
 
 

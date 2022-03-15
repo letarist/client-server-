@@ -1,10 +1,9 @@
+import datetime
 from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData, ForeignKey, DateTime, Text
 from sqlalchemy.orm import mapper, sessionmaker
-import datetime
 
 
 class ServerDatabase:
-
     class AllUsers:
         def __init__(self, username, passwd_hash):
             self.name = username
@@ -64,8 +63,8 @@ class ServerDatabase:
                 'id', Integer, primary_key=True), Column(
                 'user', ForeignKey('Users.id'), unique=True), Column(
                 'ip_address', String), Column(
-                    'port', Integer), Column(
-                        'login_time', DateTime))
+                'port', Integer), Column(
+                'login_time', DateTime))
         user_login_history = Table('Login_history', self.metadata,
                                    Column('id', Integer, primary_key=True),
                                    Column('name', ForeignKey('Users.id')),
@@ -188,8 +187,8 @@ class ServerDatabase:
 
         if not contact or self.session.query(
                 self.UsersContacts).filter_by(
-                user=user.id,
-                contact=contact.id).count():
+            user=user.id,
+            contact=contact.id).count():
             return
         contact_row = self.UsersContacts(user.id, contact.id)
         self.session.add(contact_row)
@@ -253,6 +252,7 @@ class ServerDatabase:
             self.UsersHistory.accepted
         ).join(self.AllUsers)
         return query.all()
+
 
 if __name__ == '__main__':
     test_db = ServerStorage('../server_database.db3')

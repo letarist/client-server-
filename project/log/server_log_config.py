@@ -1,6 +1,6 @@
 import logging
-import sys
 from logging import handlers
+import sys
 
 log = logging.getLogger('server')
 formatter = logging.Formatter('%(levelname)-8s - %(asctime)s - %(message)s')

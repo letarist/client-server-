@@ -3,16 +3,16 @@ import os
 import argparse
 import logging
 import configparser
-import log.server_log_config
+from PyQt5.QtWidgets import QApplication
+from PyQt5.QtCore import Qt
 
+import log.server_log_config
 from common.variables import *
 from common.utils import *
 from decorators import logg
 from server.core import MessageProcessor
 from server.database import ServerDatabase
 from server.main_window import MainWindow
-from PyQt5.QtWidgets import QApplication
-from PyQt5.QtCore import Qt
 
 logger = logging.getLogger('server_dist')
 
